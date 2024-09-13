@@ -1,0 +1,63 @@
+<html dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--todo ============= axios     file =============== -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script> -->
+     <script src="./axios.min.js"></script>
+<!--todo ============= font files =============== -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+<!--todo ============= css files =============== -->
+<link rel="stylesheet" href="./bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css">
+<link rel="stylesheet" href="./main.css">
+    <title>Prayer Times - مواقيت الصلاة</title>
+</head>
+<body class="body">
+    <div class="container-fluid py-5 parentContainer ">
+        <p class="flag mx-5 text-light">بلدك الحالية :  </p>
+        <span class="flag"></span>
+        <div class="secondContainer container d-flex flex-column justify-content-center my-5 py-5 px-0">
+            <h1  class="text-center text-light fs-4 fw-5"> الوقت الحالي </h1>
+            <h1  class="text-center text-light fs-1 time fw-1 time">00:30</h1>
+                <div class="thirdContainer text-center fs-1 container px-4 my-5 py-2 border border-1 border-warning rounded-3">
+                    <div class="row px-1">
+                        <div class=" col-md-5 col-lg-2 col-sm-6 bg-light text-dark p-1 m-2 rounded-2">
+                            <h2 class="bg-dark text-light py-1 rounded-2 ">الفجر</h2>
+                            <p class="Fajr p-2">00:00 <span class="span">pm</span></p>
+                        </div>
+                        <div class=" col-md-5 col-lg-2 col-sm-6 bg-light text-dark p-1 px-1 m-2 rounded-2">
+                            <h2 class="bg-dark text-light py-1 rounded-2" >الضهر</h2>
+                            <p class="Dhuhr p-2">00:00 <span class="span">pm</span></p>
+                        </div>
+                        <div class=" col-md-5 col-lg-2 col-sm-6 bg-light text-dark p-1 px-1 m-2 rounded-2">
+                            <h2 class="bg-dark text-light py-1 rounded-2" >العصر</h2>
+                            <p class="Asr p-2">00:00 <span class="span">pm</span></p>
+                        </div>
+                        <div class=" col-md-5 col-lg-2 col-sm-6 bg-light text-dark p-1 px-1 m-2 rounded-2">
+                            <h2 class="bg-dark text-light py-1 rounded-2" >المغرب</h2>
+                            <p class="Maghrib p-2">00:00 <span class="span">pm</span></p>
+                        </div>
+                        <div class=" col-md-5 col-lg-2 col-sm-6 bg-light text-dark p-1 px-1 m-2 rounded-2">
+                            <h2 class="bg-dark text-light py-1 rounded-2">العشاء</h2>
+                            <p class="Isha p-2">00:00 <span class="span">pm</span></p>
+                        </div>
+                    </div>
+                    <!-- <p  class="text-center my-3 text-light fs-5 time fw-1 time">الصلاة التالية هي : <span class="text-warning prayerName">الضهر</span> ، متبقي عليها : <span class="text-warning reminingTime" >00:00</span> </p> -->
+                </div>
+                <div class="forthContainer container col-md-6">
+                    <select class="form-select" id="search" aria-label="Default select example">
+                        <p class="text-danger" > اختر محل اقامتك الحالي : </p>
+                        <option class="option" disabled selected>أختر مدينتك الحالية</option>
+                    </select>
+                </div>               
+        </div>
+    </div>
+<!--todo ============= Js scripts =============== -->
+<script src="./muslimCommunities.js"></script>
+<script src="./app.js"></script>
+</body>
+</html>
